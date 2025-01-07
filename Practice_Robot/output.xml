@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-25T16:45:40.896704" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic search" source="D:\Automation\Robot_Automation\Practice_Robot\Ebay\Basic_search.robot">
+<test id="s1-t1" name="Verify Basic Search Functionality for Ebay" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T16:45:41.139704" level="INFO">Opening browser 'Chrome' to base url 'https://www.ebay.com'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T16:45:41.138708" elapsed="5.506996"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-25T16:45:46.646703" level="INFO">Typing text 'mobile' into text field '//input[@id='gh-ac']'.</msg>
+<arg>//input[@id='gh-ac']</arg>
+<arg>mobile</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T16:45:46.646703" elapsed="0.169000"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-03-25T16:45:46.816703" level="INFO">Sending key(s) ('[Return]',) to //input[@id='gh-btn'] element.</msg>
+<msg time="2024-03-25T16:45:49.814352" level="INFO">Sending keys [Return]</msg>
+<arg>//input[@id='gh-btn']</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-03-25T16:45:46.815703" elapsed="3.128647"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-25T16:45:49.972353" level="INFO">Current page contains text 'results for mobile'.</msg>
+<arg>results for mobile</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-25T16:45:49.944350" elapsed="0.029001"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-25T16:45:49.973351" elapsed="2.167723"/>
+</kw>
+<doc>this test case verifies the basic search</doc>
+<tag>Functional</tag>
+<status status="PASS" start="2024-03-25T16:45:41.137707" elapsed="11.005357"/>
+</test>
+<doc>Basic search Functionality</doc>
+<status status="PASS" start="2024-03-25T16:45:40.898705" elapsed="11.247350"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Basic search">Basic search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
